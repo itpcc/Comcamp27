@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: #009cff;
+	font-family: 'Lato', sans-serif;
+	color:white;
+	font-size: 3em;
+	font-weight: 100;
+}
+.count{
+	background-color: #009cff;
+	width: 100%;
+	height: 100%;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10px;
+	padding-right: 10px;
+	left: 0;
+	right: 0;
+	vertical-align: center;
+	text-align: center;
+}
+.message{
+	font-size: 0.7em;
+}
+.submessage{
+	font-size: 0.4em;
+	padding: 30px;
+}
+.sub{
+	font-size: 0.4em;
+}
+#day{
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding:40px;
+	margin: 10px;
+	margin-bottom: 30px;
+	vertical-align: center;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+}
+#hr{
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding:40px;
+	margin: 10px;
+	margin-bottom: 30px;
+	vertical-align: center;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+}
+#mins{
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding:40px;
+	margin: 10px;
+	margin-bottom: 30px;
+	vertical-align: center;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+}
+#sec{
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding:40px;
+	margin: 10px;
+	margin-bottom: 30px;
+	vertical-align: center;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+}
+.detail{
+	width: 50%;
+	height: 1px;
+	margin-top: 10px;
+	background-color: white;
+	vertical-align: center;
+	text-align: center;
+}
+img{
+	max-width: 500px;
+	max-height: auto;
+}
+input{
+	display: inline-block;
+	margin-top: 30px;
+	min-width: 100px;
+	width: 30%;
+	font-size: 0.33em;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #9ad8ff;
+	background-color: #51bbff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+    color:    #d4eeff;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #d4eeff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #d4eeff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #d4eeff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #d4eeff;
+}
+button{
+	display: inline-block;
+	margin-top: 30px;
+	min-width: 100px;
+	width: 5%;
+	font-size: 0.35em;
+	padding: 19px;
+	border-radius: 10px;
+	border: 1px solid #9ad8ff;
+	background-color: #d7efff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+    color:    #009cff;
+}
+button:hover{
+	background-color: #ffffff;
+}

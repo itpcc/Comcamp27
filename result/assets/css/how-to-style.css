@@ -1,0 +1,279 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html{
+	font-family: 'THSarabunNew', 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'ThaiSans Neue', 'Roboto', sans-serif;
+}
+h1{
+	font-size: 3.5em;
+	font-size: 3.5rem;
+	font-weight: 800;
+}
+h2{
+	font-weight: 700;
+}
+h4{
+	font-weight: 500;
+}
+h5{
+	font-weight: 300;
+}
+
+nav ul a,
+nav .brand-logo {
+	color: #EEE;
+}
+
+p{
+	line-height: 2rem;
+}
+body>.animsition-loading{ /* <div class="animsition-loading"></div> */
+	background: none;
+}
+body>.animsition-loading:before {
+	font-family: "comcamp";
+	position: fixed;
+	top: calc(50% - 147px);
+	top: calc(50% - 10.5rem);
+	width: 100%;
+	margin-top: 20px;
+	font-size: 127px;
+	/* font-size: 9rem; */
+	color: #aaa;
+	text-align: center;
+	content: "\e127";
+	/*background: rgb(216,27,96);
+	background: -moz-linear-gradient(left,  rgba(216,27,96,1) 0%, rgba(208,77,73,1) 20%, rgba(209,169,79,1) 40%, rgba(191,97,32,1) 60%, rgba(19,17,48,1) 80%, rgba(216,27,96,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(216,27,96,1)), color-stop(20%,rgba(208,77,73,1)), color-stop(40%,rgba(209,169,79,1)), color-stop(60%,rgba(191,97,32,1)), color-stop(80%,rgba(19,17,48,1)), color-stop(100%,rgba(216,27,96,1)));
+	background: -webkit-linear-gradient(left,  rgba(216,27,96,1) 0%,rgba(208,77,73,1) 20%,rgba(209,169,79,1) 40%,rgba(191,97,32,1) 60%,rgba(19,17,48,1) 80%,rgba(216,27,96,1) 100%);
+	background: -o-linear-gradient(left,  rgba(216,27,96,1) 0%,rgba(208,77,73,1) 20%,rgba(209,169,79,1) 40%,rgba(191,97,32,1) 60%,rgba(19,17,48,1) 80%,rgba(216,27,96,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(216,27,96,1) 0%,rgba(208,77,73,1) 20%,rgba(209,169,79,1) 40%,rgba(191,97,32,1) 60%,rgba(19,17,48,1) 80%,rgba(216,27,96,1) 100%);
+	background: linear-gradient(to right,  rgba(216,27,96,1) 0%,rgba(208,77,73,1) 20%,rgba(209,169,79,1) 40%,rgba(191,97,32,1) 60%,rgba(19,17,48,1) 80%,rgba(216,27,96,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d81b60', endColorstr='#d81b60',GradientType=1 );*/
+
+	-webkit-animation: animsition_color_roll 5s infinite alternate;
+	-moz-animation: animsition_color_roll 5s infinite alternate;
+	-ms-animation: animsition_color_roll 5s infinite alternate;
+	-o-animation: animsition_color_roll 5s infinite alternate;
+	animation: animsition_color_roll 5s infinite alternate;
+}
+body>.animsition-loading:after {
+	content: "Please wait. Loading in progress...";
+	/*content: "";
+	display: none;*/
+}
+@media only screen and (max-width : 500px){
+	body>.animsition-loading:before {
+		font-family: "comcamp";
+		position: fixed;
+		top: calc(50% - 80px);
+		top: calc(50% - 5.75rem);
+		font-size: 64px;
+		font-size: 4.6rem;
+	}
+}
+#menu-option{
+	z-index: 999;
+}
+#menu-howto{
+	z-index: 9999;
+}
+
+#logo-container{
+	background-image: url('/assets/img/Comcamp_header.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: transparent;
+}
+
+#menu-option-comcamp:hover{
+	background-color: rgb(19,17,48);
+	background-color: rgba(19,17,48, 0.75);
+}
+#menu-option-cpe:hover{
+	background-color: rgb(24,158,221);
+	background-color: rgba(24,158,221, 0.75);
+}
+#menu-option-kmutt:hover{
+	background-color: rgb(243,119,54);
+	/*background-color: rgba(243,119,54, 0.75);*/
+}
+/*#menu-option-comcamp a, */#menu-option-comcamp a i.comcamp-icon-ComcampMiniLogo/*, #menu-option-cpe a, #menu-option-cpe a i, #menu-option-kmutt a*/{
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	transition: color 0.3s;
+}
+/*#menu-option-comcamp:hover a, #menu-option-cpe:hover a, #menu-option-kmutt:hover a{
+	color: white;
+}*/
+#menu-option-comcamp:hover a i.comcamp-icon-ComcampMiniLogo{
+	color: #d81b60; /* pink darken-1 */
+}
+.button-collapse {
+	color: #26a69a;
+}
+
+.parallax-container {
+	min-height: 380px;
+	width: 100%;
+	line-height: 0;
+	height: auto;
+	color: rgba(255,255,255,.9);
+	background-size: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.parallax-container>a{
+	width: 100%;
+}
+
+.parallax-container .section{
+	width: 100%;
+	position: relative;
+	z-index: 99;
+}
+.parallax-container .section::before{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(19,17,48, 0.5);
+	background: -moz-linear-gradient(left,  rgba(19,17,48,0.5) 85%, rgba(19,17,48,0.07) 99%, rgba(19,17,48,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(85%,rgba(19,17,48,0.5)), color-stop(99%,rgba(19,17,48,0.07)), color-stop(100%,rgba(19,17,48,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(19,17,48,0.5) 85%,rgba(19,17,48,0.07) 99%,rgba(19,17,48,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(19,17,48,0.5) 85%,rgba(19,17,48,0.07) 99%,rgba(19,17,48,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(19,17,48,0.5) 85%,rgba(19,17,48,0.07) 99%,rgba(19,17,48,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(19,17,48,0.5) 85%,rgba(19,17,48,0.07) 99%,rgba(19,17,48,0) 100%); /* W3C */
+
+	z-index: -1;
+	transition:All 0.35s ease-in-out;
+	-webkit-transition:All 0.35s ease-in-out;
+	-moz-transition:All 0.35s ease-in-out;
+	-o-transition:All 0.35s ease-in-out;
+}
+.parallax-container:hover .section::before{
+	width: 100%;
+	background: rgba(81,31,85, 0.5);
+	background: -moz-linear-gradient(left,  rgba(81,31,85,0.5) 85%, rgba(81,31,85,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(85%,rgba(81,31,85,0.5)), color-stop(100%,rgba(81,31,85,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(81,31,85,0.5) 85%,rgba(81,31,85,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(81,31,85,0.5) 85%,rgba(81,31,85,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(81,31,85,0.5) 85%,rgba(81,31,85,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(81,31,85,0.5) 85%,rgba(81,31,85,0) 100%); /* W3C */
+
+}
+.collapsible a.btn{
+	display: inline-table;
+}
+
+@media only screen and (max-width : 992px) {
+	.parallax-container .section {
+		/*position: absolute;*/
+		top: 10%;
+	}
+	#index-banner .section {
+		top: 25%;
+		left: 0;
+	}
+	.parallax-container{
+		background-size: cover;
+	}
+	.parallax-container .parallax{
+		display: none;
+	}
+	.collapsible .collapsible-header{
+		display: inline-table;
+	}
+}
+@media only screen and (max-width : 600px) {
+	#index-banner .section {
+		position: relative;
+	}
+	#logo-container{
+		margin-left: 25px;
+	}
+	.parallax-container .section {
+		position: absolute;
+		top: 0;
+		margin-top: 10%;
+	}
+	.collapsible .collapsible-body ol{
+		padding-left: 0;
+	}
+}
+
+
+
+.icon-block {
+	padding: 0 15px;
+}
+
+footer.page-footer {
+	margin: 0;
+}
+footer .phone-name{
+	float: left;
+	min-width: 50%;
+}
+
+footer .email-hide::before{
+    content: attr(data-user) "\0040" attr(data-host);
+}
+
+footer .footer-copyright{
+	line-height: 1.25;
+}
+
+@-webkit-keyframes animsition_color_roll {
+  0% { color: #d81b60; }
+  20% { color: #d04d49; }
+  40% { color: #d1a94f; }
+  60% { color: #bf6120; }
+  80% { color: #131130; }
+  100% { color: #d81b60; }
+}
+@-moz-keyframes animsition_color_roll {
+  0% { color: #d81b60; }
+  20% { color: #d04d49; }
+  40% { color: #d1a94f; }
+  60% { color: #bf6120; }
+  80% { color: #131130; }
+  100% { color: #d81b60; }
+}
+@-ms-keyframes animsition_color_roll {
+  0% { color: #d81b60; }
+  20% { color: #d04d49; }
+  40% { color: #d1a94f; }
+  60% { color: #bf6120; }
+  80% { color: #131130; }
+  100% { color: #d81b60; }
+}
+@-o-keyframes animsition_color_roll {
+  0% { color: #d81b60; }
+  20% { color: #d04d49; }
+  40% { color: #d1a94f; }
+  60% { color: #bf6120; }
+  80% { color: #131130; }
+  100% { color: #d81b60; }
+}
+@keyframes animsition_color_roll {
+  0% { color: #d81b60; }
+  20% { color: #d04d49; }
+  40% { color: #d1a94f; }
+  60% { color: #bf6120; }
+  80% { color: #131130; }
+  100% { color: #d81b60; }
+}

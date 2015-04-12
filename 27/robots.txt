@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Allow: /
+Disallow: /assets/
+Disallow: /asset/
+
+Sitemap: http://27.comcamp.in.th/sitemap.xml

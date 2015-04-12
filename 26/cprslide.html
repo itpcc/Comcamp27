@@ -1,0 +1,50 @@
+
+<!-- saved from url=(0035)http://sakzaradio.com/cprslide.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./cprslide_files/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="./cprslide_files/jquery.jcarousel.min.js"></script>
+<script type="text/javascript">
+
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#recordlabel-logo').jcarousel({
+        auto: 2,
+		scroll: 1,
+        wrap: 'circular',
+		buttonNextHTML: false,
+		buttonPrevHTML: false,
+        initCallback: mycarousel_initCallback
+    });
+});
+
+</script>
+<style type="text/css">
+<!--
+#recordlabel-logo li { width:100px; height:60px; margin-left:6px; margin-right:6px; margin-top:15px;margin-bottom: 15px;}
+#recordlabel-logo img {border:none; outline:none;}
+#recordlabel-logo a { text-decoration:none; }
+-->
+</style>
+</head><body marginwidth="0" marginheight="0"><div class="jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;"><div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;"><ul id="recordlabel-logo" class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 2050px;">
+    <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none;" jcarouselindex="1"><img src="./cprslide_files/01.jpg" width="100" height="60"></li>
+    <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none;" jcarouselindex="1"><img src="./cprslide_files/02.jpg" width="100" height="60"></li>
+    <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none;" jcarouselindex="1"><img src="./cprslide_files/03.jpg" width="100" height="60"></li>
+    <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none;" jcarouselindex="1"><img src="./cprslide_files/04.jpg" width="100" height="60"></li>
+</ul></div></div></body></html>
